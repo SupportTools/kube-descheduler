@@ -17,7 +17,7 @@ Note: In this mode, the descheduler will only log pods that it would have evicte
 
 ```bash
 kubectl create ns descheduler --dry-run=client -o yaml | kubectl apply -f -
-kubectl apply -f https://raw.githubusercontent.com/SupportTools/kube-descheduler/main/manifets/job/dry-run.yaml
+kubectl apply -f https://raw.githubusercontent.com/SupportTools/kube-descheduler/main/manifests/job/dry-run.yaml
 ```
 
 #### Active mode
@@ -25,7 +25,7 @@ Note: In this mode, the descheduler will log pods that it would have evicted and
 
 ```bash
 kubectl create ns descheduler --dry-run=client -o yaml | kubectl apply -f -
-kubectl apply -f https://raw.githubusercontent.com/SupportTools/kube-descheduler/main/manifets/job/normal.yaml
+kubectl apply -f https://raw.githubusercontent.com/SupportTools/kube-descheduler/main/manifests/job/normal.yaml
 ```
 
 You can review the logs of the job by running the following command:
@@ -109,7 +109,7 @@ Note: In this mode, the descheduler will only log pods that it would have evicte
 
 ```bash
 kubectl create ns descheduler --dry-run=client -o yaml | kubectl apply -f -
-kubectl apply -f https://raw.githubusercontent.com/SupportTools/kube-descheduler/main/manifets/cronjob/dry-run.yaml
+kubectl apply -f https://raw.githubusercontent.com/SupportTools/kube-descheduler/main/manifests/cronjob/dry-run.yaml
 ```
 
 #### Active mode
@@ -117,7 +117,7 @@ Note: In this mode, the descheduler will log pods that it would have evicted and
 
 ```bash
 kubectl create ns descheduler --dry-run=client -o yaml | kubectl apply -f -
-kubectl apply -f https://raw.githubusercontent.com/SupportTools/kube-descheduler/main/manifets/cronjob/normal.yaml
+kubectl apply -f https://raw.githubusercontent.com/SupportTools/kube-descheduler/main/manifests/cronjob/normal.yaml
 ```
 
 You can review the logs of the job by running the following command:
@@ -140,7 +140,7 @@ Note: In this mode, the descheduler will only log pods that it would have evicte
 
 ```bash
 kubectl create ns descheduler --dry-run=client -o yaml | kubectl apply -f -
-kubectl apply -f https://raw.githubusercontent.com/SupportTools/kube-descheduler/main/manifets/deployment/dry-run.yaml
+kubectl apply -f https://raw.githubusercontent.com/SupportTools/kube-descheduler/main/manifests/deployment/dry-run.yaml
 ```
 
 #### Active mode
@@ -148,7 +148,7 @@ Note: In this mode, the descheduler will log pods that it would have evicted and
 
 ```bash
 kubectl create ns descheduler --dry-run=client -o yaml | kubectl apply -f -
-kubectl apply -f https://raw.githubusercontent.com/SupportTools/kube-descheduler/main/manifets/deployment/normal.yaml
+kubectl apply -f https://raw.githubusercontent.com/SupportTools/kube-descheduler/main/manifests/deployment/normal.yaml
 ```
 
 You can review the logs of the job by running the following command:
